@@ -1,0 +1,5 @@
+\contentsline {chapter}{\numberline {1}LabView Basics}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction}{5}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Additional Resources}{5}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Advocate the Issue}{5}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Conclusion}{5}{section.1.2}

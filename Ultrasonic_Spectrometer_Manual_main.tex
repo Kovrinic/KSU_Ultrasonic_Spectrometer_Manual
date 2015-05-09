@@ -1,7 +1,8 @@
 %\documentclass{article}
-\documentclass[journal]{IEEEtran}
-%\documentclass{report}
+%\documentclass[journal]{IEEEtran}
+\documentclass[letterpaper, twoside, openright]{report}
 %\documentclass{ActaOulu}
+%\documentclass{memoir}
 
 \usepackage{color}
 \usepackage{graphicx}
@@ -10,46 +11,50 @@
 
 \usepackage{url}
 \usepackage{hyperref}
-\hypersetup{colorlinks=true, citecolor=red, linkcolor=blue, urlcolor=blue}
-
+\hypersetup{colorlinks=true, filecolor=blue, citecolor=red, linkcolor=black, urlcolor=blue}
 
 \begin{document}
 
 \title{Ultrasonics Spectrometer Code Manual}
-\author{Matthew Rothfuss\thanks{mrengr@phys.ksu.edu,  mrengr@k-state.edu}}
+\author{Matthew Rothfuss\thanks{\href{mailto:mrengr@phys.ksu.edu}{mrengr@phys.ksu.edu}, \href{mailto:mrengr@k-state.edu}{mrengr@k-state.edu}, \href{mailto:rothfuss212@gmail.com}{rothfuss212@gmail.com}}}
 \affil{Department of Animal Science and Food Industry, Kansas State University}
-
 
 \maketitle
 
-\begin{abstract}
-Start with an area of civil society where deliberation is occurring (or needs to occur). Identify the barriers to more effective deliberation that are present in this situation and explain them using concepts found in this week's readings. Is there a way for argument/advocacy/debate to address this issue? DO NOT use an example already found in the text or extensively discussed in class---there are plenty of other ones out there for you to choose from.
-\end{abstract}
-
 %\begin{figure}[h]
 %    \centering
-%    \includegraphics[width=3.0in]{infographic-civilSociety01}
-%    \caption{Where Civil Society fits in with Citizens, the Government and the Private Sector. \cite{CounterpartInernational}}
-%    \label{Civil Society}
+%    \includegraphics[width=3.0in]{title_page}
+%    \caption{Animal Science Ultrasonic Dairy Spectrometer (ASUDS)}
+%    \label{Title_Pic}
 %\end{figure}
 
-%\chapter{First Chapter}
+%\begin{abstract}
+%Start with an area of civil society where deliberation is occurring (or needs to occur). Identify the barriers to more effective deliberation that are present in this situation and explain them using concepts found in this week's readings. Is there a way for argument/advocacy/debate to address this issue? DO NOT use an example already found in the text or extensively discussed in class---there are plenty of other ones out there for you to choose from.
+%\end{abstract}
+
+
+\tableofcontents
+
+
+\chapter{LabView Basics}
 
 \section{Introduction}
 
-On average there are about $58$ $Million$ deaths per year \cite{gomez_alvarez-arenas_air-coupled_2003}. As of March 2010: 3,147 euthanasia related deaths have been recorded \cite{kulmyrzaev_characterization_2000}. Before records we know the ancient Greeks and Romans commonly practiced euthanasia even though the Hippocratic Oath required their doctors not to give life threatening drugs out, even if asked.  But in reality few Greek or Roman doctors kept to the Oath, in fact most were in support of voluntary death in lieu of a prolonged painful death \cite{meyer_characterization_2006}.
+LabVIEW	(short	for	\textbf{Lab}oratory	\textbf{V}irtual	\textbf{I}nstrumentation	\textbf{E}ngineering	\textbf{W}orkbench) is a development environment for visual programming, developed by National Instruments (\href{http://www.ni.com/}{www.ni.com}). The code files (or program files) are identified by the \textbf{.vi} extension called \textbf{Virtual Instruments} or \textbf{VIs} for short. This graphical language is most commonly used for data acquisition, instrument control, signal processing (analysis), industrial automation, and more.
 
-\subsection{Dynamics \& Barriers to Effective Deliberate Euthanasia}
+The next section will cover some basics of LabVIEW design and operation. For additional resources, the current (2013) LabVIEW Getting Started Manual is located \href{http://www.ni.com/pdf/manuals/373427j.pdf}{here}.
 
-First off we'll briefly visit some of the arguments for and against physician-assisted suicide.  Those for euthanasia include "Right to Die," "Patient Suffering at End-of-Life," "Palliative (End-of-Life) Care," "Living Wills" and others.  Now for some against: "Religious Concerns," "Social Groups at Risk of Abuse," "Government Involvement in End-of-Life Decisions," "Hippocratic Oath and Prohibition of Killing," "Slippery Slope to Legalized Murder," and others.
+\subsection{Additional Resources}
+
+\cite{gomez_alvarez-arenas_air-coupled_2003}
 
 \subsection{Advocate the Issue}
 
-There are many groups that continue to advocate for the legalization of euthanasia. It's interesting, not many think about euthanasia until they get closer to death.  For this very reason there are organization dedicated to informing people (those close to death or expecting it soon) of there options and exploitation of care.  This gives a group climate that is somewhat cold, who wants to be excited about dying? We also don't see much of this in the media, they are more focused on new life (i.e. babies, newborns) not death, this results in limiting the exposure of the issue. 
+ 
 
 \section{Conclusion}
 
-It seems that euthanasia has been given a bad name, when in reality it and assisted suicide are a part of our everyday lives whether we know it or not.  So, better deliberation by exposure to the issue and arguing in light of the Netherlands will help to push/bring-to-light euthanasia in the rest of the world.
+
 
 \bibliography{ultrasound-ref-01}
 \bibliographystyle{unsrt}
