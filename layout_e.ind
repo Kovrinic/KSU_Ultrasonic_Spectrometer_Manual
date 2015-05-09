@@ -1,0 +1,95 @@
+\begin{theindex}
+
+  \item attention, 17
+  \item attentionsymbol, 17
+  \item author, 3
+
+  \indexspace
+
+  \item changing the layout, step by step, 7
+  \item compositor, 3
+  \item condbreak, 19
+  \item corporate desing, 4
+
+  \indexspace
+
+  \item description environment, 16
+  \item descriptioncolon, 18
+  \item descriptionleft, 19
+  \item design, generic, 5
+  \item design, logical, 5
+  \item design, visual, 5
+  \item designer, 3
+  \item dvips, 19
+
+  \indexspace
+
+  \item example, 19
+
+  \indexspace
+
+  \item footings, 4, 12, 17
+  \item footnote, 16
+  \item fullpage, 18
+
+  \indexspace
+
+  \item headings, 4, 12, 17
+
+  \indexspace
+
+  \item ifpdfoutput, 20
+
+  \indexspace
+
+  \item layout design, 3
+  \item line length, 4
+  \item line spacing, 4
+
+  \indexspace
+
+  \item manfnt, 17
+  \item manual, 4
+  \item margin notes, 4, 12
+  \item marginlabel, 17
+  \item maxipage, 18
+  \item maxipagerule, 18, 19
+  \item myfootings, 17
+  \item myheadings, 17
+
+  \indexspace
+
+  \item options, 15
+
+  \indexspace
+
+  \item page design, horizontal, 15
+  \item page design, vertical, 16
+  \item page layout, 4
+  \item pageperchapter, 19
+  \item pagesize, 19
+  \item pagestyle, 17
+  \item papermarginwidth, 15
+  \item pdftex, 19
+
+  \indexspace
+
+  \item refart, invocation, 15
+  \item refart.cls, 15
+  \item refrep, invocation, 15
+  \item refrep.cls, 15
+  \item rules, 3
+  \item rules of thumb, 4
+
+  \indexspace
+
+  \item seealso, 18
+  \item setleftmarginwidth, 18
+  \item settextfraction, 16
+  \item smallborder, 19
+
+  \indexspace
+
+  \item telephone directory, 4
+
+\end{theindex}
