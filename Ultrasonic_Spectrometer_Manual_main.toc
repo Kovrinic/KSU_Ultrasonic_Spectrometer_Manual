@@ -1,8 +1,12 @@
-\contentsline {chapter}{\numberline {1}LabView Basics}{5}{chapter.1}
-\contentsline {section}{\numberline {1.1}Introduction}{5}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Additional Resources}{5}{subsection.1.1.1}
-\contentsline {chapter}{\numberline {2}Theory of Operation}{7}{chapter.2}
-\contentsline {chapter}{\numberline {3}Code Structure}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Main VI}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}Custom VI's}{9}{section.3.2}
-\contentsline {section}{\numberline {3.3}Operation}{9}{section.3.3}
+\contentsline {chapter}{Contents}{2}{section*.1}
+\contentsline {chapter}{\chapternumberline {1}LabView Basics}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction}{3}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Additional Resources}{3}{subsection.1.1.1}
+\contentsline {chapter}{\chapternumberline {2}Theory of Operation}{5}{chapter.2}
+\contentsline {chapter}{\chapternumberline {3}Code Structure}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Main VI}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Custom VI's}{7}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Oscilloscope VIs}{7}{subsection.3.2.1}
+\contentsline {subsubsection}{LC931C\_Read.vi}{7}{section*.2}
+\contentsline {section}{\numberline {3.3}Operation}{8}{section.3.3}
+\contentsline {chapter}{Bibliography}{13}{section*.4}

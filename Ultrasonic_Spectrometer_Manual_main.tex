@@ -1,19 +1,81 @@
 %\documentclass{article}
 %\documentclass[journal]{IEEEtran}
-\documentclass[letterpaper, twoside, openright]{report}
+%\documentclass[letterpaper, twoside, openright]{report}
 %\documentclass{ActaOulu}
-%\documentclass{memoir}
+%\documentclass[12pt, twoside]{memoir}
+
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+
+\documentclass[11pt,a4paper,oldfontcommands]{memoir}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{times}
+
+\usepackage[
+breaklinks=true,colorlinks=true,
+%linkcolor=blue,urlcolor=blue,citecolor=blue,% PDF VIEW
+linkcolor=black,urlcolor=black,citecolor=black,% PRINT
+bookmarks=true,bookmarksopenlevel=2]{hyperref}
+
+\usepackage{geometry}
+% PDF VIEW
+% \geometry{total={210mm,297mm},
+% left=25mm,right=25mm,%
+% bindingoffset=0mm, top=25mm,bottom=25mm}
+% PRINT
+\geometry{total={210mm,297mm},
+left=20mm,right=20mm,
+bindingoffset=10mm, top=25mm,bottom=25mm}
+
+\OnehalfSpacing
+%\linespread{1.3}
+
+%%% CHAPTER'S STYLE
+\chapterstyle{bianchi}
+%\chapterstyle{ger}
+%\chapterstyle{madsen}
+%\chapterstyle{ell}
+%%% STYLE OF SECTIONS, SUBSECTIONS, AND SUBSUBSECTIONS
+\setsecheadstyle{\Large\bfseries\sffamily\raggedright}
+\setsubsecheadstyle{\large\bfseries\sffamily\raggedright}
+\setsubsubsecheadstyle{\bfseries\sffamily\raggedright}
+
+%%% STYLE OF PAGES NUMBERING
+%\pagestyle{companion}\nouppercaseheads 
+%\pagestyle{headings}
+%\pagestyle{Ruled}
+\pagestyle{plain}
+\makepagestyle{plain}
+\makeevenfoot{plain}{\thepage}{}{}
+\makeoddfoot{plain}{}{}{\thepage}
+\makeevenhead{plain}{}{}{}
+\makeoddhead{plain}{}{}{}
+
+
+\maxsecnumdepth{subsection} % chapters, sections, and subsections are numbered
+\maxtocdepth{subsection} % chapters, sections, and subsections are in the Table of Contents
+
+
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+
 
 \usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{float}
 \graphicspath{ {figures/ASUDS_block_diagram(s)_5-2-2015/} }
 \usepackage{array}
 \usepackage{authblk}
 \usepackage{mathtools}
-
 \usepackage{url}
 \usepackage{hyperref}
-\hypersetup{colorlinks=true, filecolor=blue, citecolor=red, linkcolor=black, urlcolor=blue}
+\hypersetup{colorlinks=true, filecolor=blue, citecolor=red, linkcolor=blue, urlcolor=RoyalBlue}
+
+
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+
 
 \begin{document}
 
@@ -22,28 +84,15 @@
 \affil{Department of Animal Science and Food Industry, Kansas State University}
 
 \maketitle
-
-%\begin{figure}[h]
-%    \centering
-%    \includegraphics[width=3.0in]{title_page}
-%    \caption{Animal Science Ultrasonic Dairy Spectrometer (ASUDS)}
-%    \label{Title_Pic}
-%\end{figure}
-
-%\begin{abstract}
-%Abstract goes here if ya want one.
-%\end{abstract}
-
-
+\newpage
 \tableofcontents
-
 
 \chapter{LabView Basics}
 
 \section{Introduction}
 
 LabVIEW	(short	for	\textbf{Lab}oratory	\textbf{V}irtual	\textbf{I}nstrumentation	\textbf{E}ngineering	\textbf{W}orkbench) is a development environment for visual programming, developed by National Instruments (\href{http://www.ni.com/}{www.ni.com}). The code files (or program files) are identified by the \textbf{.vi} extension called \textbf{Virtual Instruments} or \textbf{VIs} for short. This graphical language is most commonly used for data acquisition, instrument control, signal processing (analysis), industrial automation, and more.
-\\ \\
+
 The next section will cover some basics of LabVIEW design and operation. For additional resources, the current (2013) LabVIEW Getting Started Manual is located \href{http://www.ni.com/pdf/manuals/373427j.pdf}{here}.
 
 \subsection{Additional Resources}
@@ -53,21 +102,46 @@ The next section will cover some basics of LabVIEW design and operation. For add
 \chapter{Theory of Operation}
 
 Define the background concepts of how/what this program is accomplishing.  Make refs to papers but don't do the math here (don't have time for that).  Just outline the basics of what we want to do, what goes into the system, what the system does (ref manuals and such for theory \& papers), and what the system outputs.
-\\ \\
 
 \chapter{Code Structure}
 
 Theory of code operation goes here. ie case structure, state machine, 
-\\ \\
+
 \section{Main VI}
 
 Define the outline of the Main VI (the main program) and hit on each part of it.  Don't spend time explaining the subvi's here since i'm doing that in the \textbf{Custom VI's} section. Make sure to to be thorough on all the code that is not included in the subvi section.
-\\ \\
-The main program \textbf{ASUDS\_v13.vi} is contained within a Project file called \textcolor{red}{(file name here)}.
+
+The main program \textbf{ASUDS\_v13.vi} is contained within a Project file called \textcolor{red}{(file name here)}. When the program is ran it will first load the auto generated system settings files (via the LC931C\_Read.vi [\ref{fig:LC931C_Read_main}] or DPR300\_Read.vi) [\ref{tab:jsr}]) from the last time the program ran. A set of default system settings files are included for first time use. Next the Oscilloscope and the JSR are both initialized via LC931C\_Int.vi and DPR300\_Int.vi [\ref{tab:osc}, \ref{tab:jsr}] with the loaded settings as-well-as set the front panel controls to the loaded settings. At the same time any leftover front panel controls are set to their default values and all block diagram cases are set to there initial positions.
+
+Once the settings clusters have been set properly and
 
 \section{Custom VI's}
 
 List of custom VI's and a short description of what they do. In the next section we will take a deeper look into each of these subvi's.
+
+These files load in most of the front panel controls, some are missing since more code has been added but the vi that saves the system settings has not been updated to include the new additions.
+
+\subsection{Oscilloscope VIs}
+
+\subsubsection{LC931C\_Read.vi}
+
+\begin{figure}[h]
+	\includegraphics[scale=0.625]{LC931C_Read_main}
+	\label{fig:LC931C_Read_main}
+\end{figure}
+
+The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC931C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+
+The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}.
+
+\begin{sidewaysfigure}[pt!]
+	\includegraphics[width=\textheight,keepaspectratio]{LC931C_Read_blockdiagram}
+	\caption{LC9310C\_Read.vi}
+	\label{fig:LC931C_Read_blkdig}
+	\includegraphics[width=\textheight,keepaspectratio]{DPR300_Read_blockdiagram}
+	\caption{DPR300\_Read.vi}
+	\label{fig:DPR300_Read_blkdig}
+\end{sidewaysfigure}
 
 \begin{table}
 	\centering
@@ -83,7 +157,7 @@ List of custom VI's and a short description of what they do. In the next section
 		\includegraphics[scale=0.625]{LC931C-Config-Write-Close_main_01} & LC931C-Config-Write-Close.vi & Write Oscilloscope settings to System File and close Oscilloscope resources \\ \hline
 	\end{tabular}
 	\caption{Oscilloscope Custom VI's}
-	\label{tab:1}
+	\label{tab:osc}
 \end{table}
 
 \begin{table}
@@ -98,7 +172,7 @@ List of custom VI's and a short description of what they do. In the next section
 		\includegraphics[scale=0.625]{DPR300-Config-Write-Close_main_01} & DPR300-Config-Write-Close.vi & Write Pulser/Receiver settings to System File and close Pulser/Receiver resources \\ \hline
 	\end{tabular}
 	\caption{JSR Pulser/Receiver Custom VI's}
-	\label{tab:2}
+	\label{tab:jsr}
 \end{table}
 
 \begin{table}
@@ -112,7 +186,7 @@ List of custom VI's and a short description of what they do. In the next section
 		\includegraphics[scale=0.625]{USonic-FFT_main_01} & USonic-FFT.vi & Process Gate For Quick Analysis \\ \hline
 	\end{tabular}
 	\caption{Ultrasonic A-Scan Customized Package VI's}
-	\label{tab:3}
+	\label{tab:usonic}
 \end{table}
 
 \begin{table}
@@ -128,7 +202,7 @@ List of custom VI's and a short description of what they do. In the next section
 		\hline
 	\end{tabular}
 	\caption{Custom Math VI's}
-	\label{tab:4}
+	\label{tab:math}
 \end{table}
 
 \begin{table}
@@ -144,7 +218,7 @@ List of custom VI's and a short description of what they do. In the next section
 		\hline
 	\end{tabular}
 	\caption{Miscellaneous Custom VI's}
-	\label{tab:5}
+	\label{tab:misc}
 \end{table}
 
 \section{Operation}
