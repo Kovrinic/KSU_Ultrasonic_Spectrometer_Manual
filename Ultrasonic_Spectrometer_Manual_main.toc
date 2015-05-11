@@ -6,7 +6,9 @@
 \contentsline {chapter}{\chapternumberline {3}Code Structure}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}Main VI}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2}Custom VI's}{7}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Oscilloscope VIs}{7}{subsection.3.2.1}
-\contentsline {subsubsection}{LC931C\_Read.vi}{7}{section*.2}
-\contentsline {section}{\numberline {3.3}Operation}{8}{section.3.3}
-\contentsline {chapter}{Bibliography}{13}{section*.4}
+\contentsline {subsection}{\numberline {3.2.1}Oscilloscope VIs}{8}{subsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1.1}LC9310C\_Read.vi}{8}{subsubsection.3.2.1.1}
+\contentsline {subsubsection}{\numberline {3.2.1.2}LC9310C\_Int.vi}{9}{subsubsection.3.2.1.2}
+\contentsline {subsubsection}{\numberline {3.2.1.3}LC9310C\_Settings.vi}{11}{subsubsection.3.2.1.3}
+\contentsline {section}{\numberline {3.3}Operation}{12}{section.3.3}
+\contentsline {chapter}{Bibliography}{15}{section*.3}

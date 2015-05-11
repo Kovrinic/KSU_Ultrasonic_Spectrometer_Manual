@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.8)  10 MAY 2015 23:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.8)  11 MAY 2015 04:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -855,29 +855,33 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen178
 \l_MT_below_shortintertext_sep=\dimen179
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 71.
+Package hyperref Info: Option `colorlinks' set `true' on input line 74.
+
+Package hyperref Warning: Option `bookmarks' has already been used,
+(hyperref)                setting the option has no effect on input line 74.
+
 (./Ultrasonic_Spectrometer_Manual_main.aux)
 \openout1 = `Ultrasonic_Spectrometer_Manual_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 82.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-LaTeX Info: Redefining \microtypecontext on input line 73.
+LaTeX Info: Redefining \microtypecontext on input line 82.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -891,7 +895,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring ON on input line 73.
+Package hyperref Info: Link coloring ON on input line 82.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -901,10 +905,10 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 73.
-LaTeX Info: Redefining \ref on input line 73.
-LaTeX Info: Redefining \pageref on input line 73.
-LaTeX Info: Redefining \nameref on input line 73.
+LaTeX Info: Redefining \nameref on input line 82.
+LaTeX Info: Redefining \ref on input line 82.
+LaTeX Info: Redefining \pageref on input line 82.
+LaTeX Info: Redefining \nameref on input line 82.
 (./Ultrasonic_Spectrometer_Manual_main.out) (./Ultrasonic_Spectrometer_Manual_m
 ain.out)
 \@outlinefile=\write4
@@ -976,7 +980,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for T1+phv on input line 82.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 91.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
@@ -985,21 +989,21 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 82.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 91.
 (./Ultrasonic_Spectrometer_Manual_main.toc
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
 ) [2]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 83.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 92.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 85.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 94.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 85.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 94.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 91.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 100.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 91.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 100.
 [3
 
 ] [4
@@ -1007,161 +1011,240 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 ] [5] [6
 
 ]
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 119.
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_main.png, id=101, 105.3937
+LaTeX Warning: Reference `fig:LC931C_Read_main' on page 7 undefined on input li
+ne 116.
+
+
+<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_main.png, id=115, 105.3937
 5pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_main.png Graphic file
  (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_main.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_ma
-in.png used on input line 122.
-(pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
-[7 <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_main.png (PNG copy)>]
-
-<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_blockdiagram.png, id=112, 
-1232.605pt x 360.34625pt>
-File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_blockdiagram.png Grap
-hic file (type png)
-<use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_blockdiagram.png>
-Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_bl
-ockdiagram.png used on input line 131.
-(pdftex.def)             Requested size: 702.78308pt x 205.45998pt.
-
-<figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_blockdiagram.png, id=113, 
-1141.26375pt x 337.26pt>
-File: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_blockdiagram.png Grap
-hic file (type png)
-<use figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_blockdiagram.png>
-Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_bl
-ockdiagram.png used on input line 134.
-(pdftex.def)             Requested size: 702.78308pt x 207.68384pt.
-File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_main.png Graphic file
- (type png)
-<use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_main.png>
-Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_ma
-in.png used on input line 145.
+in.png used on input line 134.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_main_02.png, id=114, 105.39
+<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_main_02.png, id=117, 105.39
 375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_main_02.png Graphic fi
 le (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_main_02.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_mai
-n_02.png used on input line 146.
+n_02.png used on input line 135.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_main_01.png, id=115, 1
+<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_main_01.png, id=119, 1
 05.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_main_01.png Graph
 ic file (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_setting
-s_main_01.png used on input line 147.
+s_main_01.png used on input line 136.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-wave-output_main_01.png,
- id=116, 105.39375pt x 64.24pt>
+ id=121, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-wave-output_main_01
 .png Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-wave-output_main_01.
 png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-
-wave-output_main_01.png used on input line 148.
+wave-output_main_01.png used on input line 137.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
+[]|\T1/ptm/m/n/10.95 (+20) LC9310C_single-wave-
+ []
+
+
 <figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_norm-pad-hilbert_main_01.png, i
-d=117, 105.39375pt x 64.24pt>
+d=122, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_norm-pad-hilbert_main_01.p
 ng Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_norm-pad-hilbert_main_01.pn
 g>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_norm-pa
-d-hilbert_main_01.png used on input line 149.
+d-hilbert_main_01.png used on input line 138.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-Config-Write-Close_main_01.png,
- id=118, 105.39375pt x 64.24pt>
+ id=123, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-Config-Write-Close_main_01
 .png Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-Config-Write-Close_main_01.
 png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-Config-
-Write-Close_main_01.png used on input line 150.
+Write-Close_main_01.png used on input line 139.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_main.png, id=119, 105.3937
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+[]|\T1/ptm/m/n/10.95 (+20) LC9310C-Config-Write-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[7]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 145.
+File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_main.png Graphic file
+ (type png)
+<use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_main.png>
+Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_ma
+in.png used on input line 150.
+(pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
+
+LaTeX Warning: Reference `fig:LC931C_Read_blkdig' on page 8 undefined on input 
+line 154.
+
+
+<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_blockdiagram.png, id=134, 
+1232.605pt x 360.34625pt>
+File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_blockdiagram.png Grap
+hic file (type png)
+<use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_blockdiagram.png>
+Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_bl
+ockdiagram.png used on input line 161.
+(pdftex.def)             Requested size: 702.78308pt x 205.45998pt.
+
+<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_blockdiagram.png, id=135, 1
+485.55pt x 501.875pt>
+File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_blockdiagram.png Graph
+ic file (type png)
+<use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_blockdiagram.png>
+Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_blo
+ckdiagram.png used on input line 164.
+(pdftex.def)             Requested size: 702.78308pt x 237.42819pt.
+[8pdfTeX warning (ext4): destination with the same identifier (name{table.3.1})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.167 \end{sidewaysfigure}
+                           <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Re
+ad_main.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_m
+ain_02.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settin
+gs_main_01.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_si
+ngle-wave-output_main_01.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-
+2015/LC931C_norm-pad-hilbert_main_01.png (PNG copy)> <./figures/ASUDS_block_dia
+gram(s)_5-2-2015/LC931C-Config-Write-Close_main_01.png (PNG copy)>]
+File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_main_02.png Graphic fi
+le (type png)
+<use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_main_02.png>
+Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_mai
+n_02.png used on input line 174.
+(pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
+
+<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_blockdiagram_01.png, i
+d=144, 1016.79875pt x 382.42876pt>
+File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_blockdiagram_01.p
+ng Graphic file (type png)
+
+<use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_blockdiagram_01.pn
+g>
+Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_setting
+s_blockdiagram_01.png used on input line 187.
+(pdftex.def)             Requested size: 455.24413pt x 171.22186pt.
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.191 \newpage
+               <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_block
+diagram_01.png (PNG copy)>] [10pdfTeX warning (ext4): destination with the same
+ identifier (name{figure.3.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.191 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name
+{figure.3.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.191 \newpage
+               <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_blockdiag
+ram.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_block
+diagram.png (PNG copy)>]
+File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_main_01.png Graph
+ic file (type png)
+<use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_main_01.png>
+Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_setting
+s_main_01.png used on input line 198.
+(pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
+[11]
+<figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_main.png, id=165, 105.3937
 5pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_main.png Graphic file
  (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_main.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_ma
-in.png used on input line 162.
+in.png used on input line 216.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-Underfull \hbox (badness 4752) in paragraph at lines 162--162
+Underfull \hbox (badness 4752) in paragraph at lines 216--216
 []|\T1/ptm/m/n/10.95 (+20) Load Pulser/Receiver Set-ting
  []
 
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Int_main_02.png, id=120, 105.39
+<figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Int_main_02.png, id=166, 105.39
 375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Int_main_02.png Graphic fi
 le (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Int_main_02.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Int_mai
-n_02.png used on input line 163.
+n_02.png used on input line 217.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-Underfull \hbox (badness 3375) in paragraph at lines 163--163
+Underfull \hbox (badness 3375) in paragraph at lines 217--217
 []|\T1/ptm/m/n/10.95 (+20) Initialize Pulser/Receiver Set-
  []
 
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_settings_main_01.png, id=121, 1
+<figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_settings_main_01.png, id=167, 1
 05.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_settings_main_01.png Graph
 ic file (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_settings_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_setting
-s_main_01.png used on input line 164.
+s_main_01.png used on input line 218.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
 []|\T1/ptm/m/n/10.95 (+20) Apply Set-tings to
  []
 
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/DPR300-Config-Write-Close_main_01.png,
- id=122, 105.39375pt x 64.24pt>
+ id=168, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300-Config-Write-Close_main_01
 .png Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/DPR300-Config-Write-Close_main_01.
 png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300-Config-
-Write-Close_main_01.png used on input line 165.
+Write-Close_main_01.png used on input line 219.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--165
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
 \T1/ptm/m/n/10.95 (+20) to Sys-tem File and close
  []
 
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-Config-edit_main_01.png,
- id=123, 105.39375pt x 64.24pt>
+ id=169, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-Config-edit_main_01
 .png Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-Config-edit_main_01.
 png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-
-Config-edit_main_01.png used on input line 177.
+Config-edit_main_01.png used on input line 231.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 File: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-Config-edit_main_01
 .png Graphic file (type png)
@@ -1169,130 +1252,103 @@ File: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-Config-edit_main_01
 <use figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-Config-edit_main_01.
 png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-
-Config-edit_main_01.png used on input line 178.
+Config-edit_main_01.png used on input line 232.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-Underfull \hbox (badness 1092) in paragraph at lines 178--178
+Underfull \hbox (badness 1092) in paragraph at lines 232--232
 []|\T1/ptm/m/n/10.95 (+20) Pull Out Rel-e-vant Data from
  []
 
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/USonic-FFT_main_01.png, id=124, 105.39
+<figures/ASUDS_block_diagram(s)_5-2-2015/USonic-FFT_main_01.png, id=170, 105.39
 375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-FFT_main_01.png Graphic fi
 le (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/USonic-FFT_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-FFT_mai
-n_01.png used on input line 179.
+n_01.png used on input line 233.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/Waveform-to-XY-Array_main_01.png, id=1
-25, 105.39375pt x 64.24pt>
+71, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/Waveform-to-XY-Array_main_01.png 
 Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Waveform-to-XY-Array_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Waveform-to-XY
--Array_main_01.png used on input line 191.
+-Array_main_01.png used on input line 245.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/Filter_signal_main_01.png, id=126, 105
+<figures/ASUDS_block_diagram(s)_5-2-2015/Filter_signal_main_01.png, id=172, 105
 .39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/Filter_signal_main_01.png Graphic
  file (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Filter_signal_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Filter_signal_
-main_01.png used on input line 192.
+main_01.png used on input line 246.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/Average-Dynamic-Array_main_01.png, id=
-127, 105.39375pt x 64.24pt>
+173, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/Average-Dynamic-Array_main_01.png
  Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Average-Dynamic-Array_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Average-Dynami
-c-Array_main_01.png used on input line 193.
+c-Array_main_01.png used on input line 247.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/FWHM-Poly_main_01.png, id=128, 105.393
+<figures/ASUDS_block_diagram(s)_5-2-2015/FWHM-Poly_main_01.png, id=174, 105.393
 75pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/FWHM-Poly_main_01.png Graphic fil
 e (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/FWHM-Poly_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/FWHM-Poly_main
-_01.png used on input line 194.
+_01.png used on input line 248.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/Save-User-Config-File_main_01.png, id=
-129, 105.39375pt x 64.24pt>
+175, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/Save-User-Config-File_main_01.png
  Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Save-User-Config-File_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Save-User-Conf
-ig-File_main_01.png used on input line 207.
+ig-File_main_01.png used on input line 261.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/Load-User-Config-File_main_01.png, id=
-130, 105.39375pt x 64.24pt>
+176, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/Load-User-Config-File_main_01.png
  Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Load-User-Config-File_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Load-User-Conf
-ig-File_main_01.png used on input line 208.
+ig-File_main_01.png used on input line 262.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/Time-Data_main_01.png, id=131, 105.393
+<figures/ASUDS_block_diagram(s)_5-2-2015/Time-Data_main_01.png, id=177, 105.393
 75pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/Time-Data_main_01.png Graphic fil
 e (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Time-Data_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Time-Data_main
-_01.png used on input line 209.
+_01.png used on input line 263.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/Instrument-error-handler_main_01.png, 
-id=132, 105.39375pt x 64.24pt>
+id=178, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/Instrument-error-handler_main_01.
 png Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Instrument-error-handler_main_01.p
 ng>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Instrument-err
-or-handler_main_01.png used on input line 210.
+or-handler_main_01.png used on input line 264.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
-(./Ultrasonic_Spectrometer_Manual_main.bbl [8pdfTeX warning (ext4): destination
- with the same identifier (name{table.3.1}) has been already used, duplicate ig
-nored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1 \begin{thebibliography}{1}
-                               <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931
-C_Int_main_02.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931C
-_settings_main_01.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/LC
-931C_single-wave-output_main_01.png (PNG copy)> <./figures/ASUDS_block_diagram(
-s)_5-2-2015/LC931C_norm-pad-hilbert_main_01.png (PNG copy)> <./figures/ASUDS_bl
-ock_diagram(s)_5-2-2015/LC931C-Config-Write-Close_main_01.png (PNG copy)>] [9pd
-fTeX warning (ext4): destination with the same identifier (name{figure.3.1}) ha
-s been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1 \begin{thebibliography}{1}
-                              pdfTeX warning (ext4): destination with the same 
-identifier (name{figure.3.2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1 \begin{thebibliography}{1}
-                               <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931
-C_Read_blockdiagram.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/
-DPR300_Read_blockdiagram.png (PNG copy)>] [10pdfTeX warning (ext4): destination
- with the same identifier (name{table.3.2}) has been already used, duplicate ig
-nored
+(./Ultrasonic_Spectrometer_Manual_main.bbl [12pdfTeX warning (ext4): destinatio
+n with the same identifier (name{table.3.2}) has been already used, duplicate i
+gnored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1303,59 +1359,63 @@ identifier (name{table.3.3}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \begin{thebibliography}{1}
-                              pdfTeX warning (ext4): destination with the same 
-identifier (name{table.3.4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1 \begin{thebibliography}{1}
                                <./figures/ASUDS_block_diagram(s)_5-2-2015/DPR30
 0_Read_main.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_I
 nt_main_02.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_se
 ttings_main_01.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/DPR30
 0-Config-Write-Close_main_01.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_
 5-2-2015/USonic-A-Scan-Config-edit_main_01.png (PNG copy)> <./figures/ASUDS_blo
-ck_diagram(s)_5-2-2015/USonic-FFT_main_01.png (PNG copy)> <./figures/ASUDS_bloc
-k_diagram(s)_5-2-2015/Waveform-to-XY-Array_main_01.png (PNG copy)> <./figures/A
-SUDS_block_diagram(s)_5-2-2015/Filter_signal_main_01.png (PNG copy)> <./figures
-/ASUDS_block_diagram(s)_5-2-2015/Average-Dynamic-Array_main_01.png (PNG copy)> 
-<./figures/ASUDS_block_diagram(s)_5-2-2015/FWHM-Poly_main_01.png (PNG copy)>] [
-11pdfTeX warning (ext4): destination with the same identifier (name{table.3.5})
- has been already used, duplicate ignored
+ck_diagram(s)_5-2-2015/USonic-FFT_main_01.png (PNG copy)>] [13pdfTeX warning (e
+xt4): destination with the same identifier (name{table.3.4}) has been already u
+sed, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \begin{thebibliography}{1}
-                               <./figures/ASUDS_block_diagram(s)_5-2-2015/Save-
-User-Config-File_main_01.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-
-2015/Load-User-Config-File_main_01.png (PNG copy)> <./figures/ASUDS_block_diagr
-am(s)_5-2-2015/Time-Data_main_01.png (PNG copy)> <./figures/ASUDS_block_diagram
-(s)_5-2-2015/Instrument-error-handler_main_01.png (PNG copy)>] [12
+                              pdfTeX warning (ext4): destination with the same 
+identifier (name{table.3.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \begin{thebibliography}{1}
+                               <./figures/ASUDS_block_diagram(s)_5-2-2015/Wavef
+orm-to-XY-Array_main_01.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2
+015/Filter_signal_main_01.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2
+-2015/Average-Dynamic-Array_main_01.png (PNG copy)> <./figures/ASUDS_block_diag
+ram(s)_5-2-2015/FWHM-Poly_main_01.png (PNG copy)> <./figures/ASUDS_block_diagra
+m(s)_5-2-2015/Save-User-Config-File_main_01.png (PNG copy)> <./figures/ASUDS_bl
+ock_diagram(s)_5-2-2015/Load-User-Config-File_main_01.png (PNG copy)> <./figure
+s/ASUDS_block_diagram(s)_5-2-2015/Time-Data_main_01.png (PNG copy)> <./figures/
+ASUDS_block_diagram(s)_5-2-2015/Instrument-error-handler_main_01.png (PNG copy)
+>] [14
 
 ]
 bibitemlist
-) [13]
+) [15]
 \tf@toc=\write5
 \openout5 = `Ultrasonic_Spectrometer_Manual_main.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 278.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 278.
 (./Ultrasonic_Spectrometer_Manual_main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 278.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 278.
 Package rerunfilecheck Info: File `Ultrasonic_Spectrometer_Manual_main.out' has
  not changed.
-(rerunfilecheck)             Checksum: 7DA456A17B44C90B1BC5667BDB382C85;611.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
+(rerunfilecheck)             Checksum: B2C5C16639496F59F79169BF11EC1E2C;860.
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 278.
  ) 
 Here is how much of TeX's memory you used:
- 13109 strings out of 494424
- 195948 string characters out of 6165347
- 360664 words of memory out of 5000000
- 16059 multiletter control sequences out of 15000+600000
- 62492 words of font info for 121 fonts, out of 8000000 for 9000
+ 13148 strings out of 494424
+ 196772 string characters out of 6165347
+ 354911 words of memory out of 5000000
+ 16073 multiletter control sequences out of 15000+600000
+ 63673 words of font info for 134 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
- 40i,16n,35p,828b,352s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,16n,35p,888b,364s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/f
@@ -1363,11 +1423,11 @@ onts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
 mb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Ultrasonic_Spectrometer_Manual_main.pdf (13 pages, 213360 byt
+Output written on Ultrasonic_Spectrometer_Manual_main.pdf (15 pages, 296909 byt
 es).
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 28359 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 237 PDF objects out of 1000 (max. 8388607)
+ 188 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 28388 words of extra memory for PDF output out of 29859 (max. 10000000)
 
