@@ -66,6 +66,8 @@ bindingoffset=10mm, top=25mm,bottom=25mm}
 \usepackage{rotating}
 \usepackage{float}
 \graphicspath{ {figures/ASUDS_block_diagram(s)_5-2-2015/} }
+\usepackage{caption}
+\usepackage{subcaption}
 \usepackage{array}
 \usepackage{authblk}
 \usepackage{mathtools}
@@ -131,31 +133,30 @@ These files load in most of the front panel controls, some are missing since mor
 		\hline
 		\hline \multicolumn{3}{c}{Oscilloscope} \\ \hline \hline
 		VI & File Name & Description \\ \hline
-		\includegraphics[scale=0.625]{LC931C_Read_main} & \hyperref[fig:LC9310C_Read_main]{LC9310C\_Read.vi} & Load Oscilloscope Setting from System Generated File \\ \hline
-		\includegraphics[scale=0.625]{LC931C_Int_main_02} & \hyperref[fig:LC9310C_Int_main_02]{LC9310C\_Int.vi} & Initialize Oscilloscope Settings \\ \hline
-		\includegraphics[scale=0.625]{LC931C_settings_main_01} & \hyperref[fig:LC9310C_settings_main_01]{LC9310C\_settings.vi} & Apply Settings to Oscilloscope \\ \hline
-		\includegraphics[scale=0.625]{LC931C_single-wave-output_main_01} & LC9310C\_single-wave-output.vi & Acquire Single Wave from Oscilloscope and Average \\ \hline
-		\includegraphics[scale=0.625]{LC931C_norm-pad-hilbert_main_01} & LC9310C\_norm-pad-hilbert.vi & Oscilloscope Tab Settings \\ \hline
-		\includegraphics[scale=0.625]{LC931C-Config-Write-Close_main_01} & LC9310C-Config-Write-Close.vi & Write Oscilloscope settings to System File and close Oscilloscope resources \\ \hline
+		\includegraphics[scale=0.625]{LC931C_Read_main} & \hyperref[LC9310C_Read]{LC9310C\_Read.vi} & Load Oscilloscope Setting from System Generated File \\ \hline
+		\includegraphics[scale=0.625]{LC931C_Int_main_02} & \hyperref[LC9310C_Int]{LC9310C\_Int.vi} & Initialize Oscilloscope Settings \\ \hline
+		\includegraphics[scale=0.625]{LC931C_settings_main_01} & \hyperref[LC9310C_settings]{LC9310C\_settings.vi} & Apply Settings to Oscilloscope \\ \hline
+		\includegraphics[scale=0.625]{LC931C_single-wave-output_main_01} & \hyperref[LC9310C_swo]{LC9310C\_single-wave-output.vi} & Acquire Single Wave from Oscilloscope and Average \\ \hline
+		\includegraphics[scale=0.625]{LC931C_norm-pad-hilbert_main_01} & \hyperref[LC9310C_nph]{LC9310C\_norm-pad-hilbert.vi} & Oscilloscope Tab Settings \\ \hline
+		\includegraphics[scale=0.625]{LC931C-Config-Write-Close_main_01} & \hyperref[LC9310C_cwc]{LC9310C-Config-Write-Close.vi} & Write Oscilloscope settings to System File and close Oscilloscope resources \\ \hline
 	\end{tabular}
 	\caption{Oscilloscope Custom VIs}
 	\label{tab:osc}
 \end{table}
 
-\subsubsection{LC9310C\_Read.vi}
-
+\subsubsection{LC9310C\_Read.vi} \label{LC9310C_Read}
 \noindent\hrulefill
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\includegraphics[scale=0.625]{LC931C_Read_main}
 	\label{fig:LC9310C_Read_main}
 \end{figure}
 
-The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC931C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC9310C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
 
 The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data). 
 
-\noindent\hrulefill \hyperref[tab:osc]{Back to Osc. Table \ref{tab:osc}}
+\noindent\hrulefill\, \hyperref[tab:osc]{Back to Osc.\ Table \ref{tab:osc}}
 
 \begin{sidewaysfigure}[p!]
 	\includegraphics[width=\textheight,keepaspectratio]{LC931C_Read_blockdiagram}
@@ -166,11 +167,10 @@ The for loop steps through each list section of the ".ini" file. Each list secti
 	\label{fig:LC9310C_Int_blkdig}
 \end{sidewaysfigure}
 
-\subsubsection{LC9310C\_Int.vi}
-
+\subsubsection{LC9310C\_Int.vi} \label{LC9310C_Int}
 \noindent\hrulefill
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\includegraphics[scale=0.625]{LC931C_Int_main_02}
 	\label{fig:LC9310C_Int_main_02}
 \end{figure}
@@ -181,22 +181,19 @@ The \textbf{LCDSO Initialize} VI takes the GPIB location of the oscilloscope and
 
 From the \textbf{LeCroy 9310C Settings} in cluster we set the \textbf{LC930x TimeBase}, \textbf{LC930x Vertical Setup}, and \textbf{LC930x Trigger} VIs. The cluster is unbundled and each setting is routed to it's respective input. Note the \textbf{LeCroy 9310C Settings} cluster is just passed through in this VI and not altered, because it is only pulling out data to setup other VIs.
 
-\noindent\hrulefill \hyperref[tab:osc]{Back to Osc. Table \ref{tab:osc}}
+\noindent\hrulefill\, \hyperref[tab:osc]{Back to Osc.\ Table \ref{tab:osc}}
 
-\newpage
-
-\subsubsection{LC9310C\_Settings.vi}
-
+\subsubsection{LC9310C\_Settings.vi} \label{LC9310C_settings}
 \noindent\hrulefill
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\includegraphics[scale=0.625]{LC931C_settings_main_01}
 	\label{fig:LC9310C_settings_main_01}
 \end{figure}
 
 The LC931C\_Settings.vi applies changes to the \textit{trigger setup, vertical setup, and time setup (horizontal)} oscilloscope VIs. This VI requires the \href{http://sine.ni.com/apps/utf8/niid_web_display.download_page?p_id_guid=E3B19B3E9608659CE034080020E74861}{LeCroy lc930x1x Library}. Figure (\ref{fig:LC9310C_Int_blkdig}) is the block diagram. On the "error" case the \textbf{LeCroy 9310C Settings} cluster is passed through and so is the error cluster.
 
-\noindent\hrulefill \hyperref[tab:osc]{Back to Osc. Table \ref{tab:osc}}
+\noindent\hrulefill\, \hyperref[tab:osc]{Back to Osc.\ Table \ref{tab:osc}}
 
 \begin{figure}[H]
 	\includegraphics[width=\textwidth,keepaspectratio]{LC931C_settings_blockdiagram_01}
@@ -204,71 +201,372 @@ The LC931C\_Settings.vi applies changes to the \textit{trigger setup, vertical s
 	\label{fig:LC9310C_settings_blkdig_01}
 \end{figure}
 
+\subsubsection{LC9310C\_Single-Wave-Output.vi} \label{LC9310C_swo}
+\noindent\hrulefill
+
+\begin{figure}[H]
+	\includegraphics[scale=0.625]{LC931C_single-wave-output_main_01}
+	\label{fig:LC9310C_single-wave-output_main_01}
+\end{figure}
+
+The LC931C\_Single-Wave-Output.vi acquires the signal from the LeCroy 9310C Oscilloscope and will average the acquired wave according to the desired sample size. This VI requires the \href{http://sine.ni.com/apps/utf8/niid_web_display.download_page?p_id_guid=E3B19B3E9608659CE034080020E74861}{LeCroy lc930x1x Library}. Figure (\ref{fig:LC9310C_Int_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute, instead the case not shown passes through the \textbf{LeCroy 9310C Settings}, \textbf{VISA (in)}, and \textbf{error (in)} unchanged. The \textbf{Wave Output} cluster will reset to an empty Waveform cluster during an error.
+
+We first initialize an empty array with the size of our acquired wave from the \textbf{LCDSO Simple Read} VI. Take the Source channel setting from the \textbf{LeCroy 9310C Settings} cluster and set both \textbf{LCDSO Simple Read} VIs. The for loop is setup to first add all the arrays together (\hyperref[subfig:LC931C_single-wave-output_blkdig_02]{Figure \ref{subfig:LC931C_single-wave-output_blkdig_02}}) and then once the for loop indices indicator and the number of times the loop has ran match, then the added array is divided by total number of samples and placed back into the \textbf{Wave Output} cluster. (\hyperref[subfig:LC931C_single-wave-output_blkdig_01]{Figure \ref{subfig:LC931C_single-wave-output_blkdig_01}}) If no averaging is needed because the sample size is 1, meaning average over one sample (need 2 to average), then the for loop will run once and the \textbf{Wave Output} cluster will be passed out. (\hyperref[subfig:LC931C_single-wave-output_blkdig_03]{Figure \ref{subfig:LC931C_single-wave-output_blkdig_03}})
+
+\noindent\hrulefill\, \hyperref[tab:osc]{Back to Osc.\ Table \ref{tab:osc}}
+
+\begin{sidewaysfigure}[p!]
+	\begin{subfigure}[t]{\textheight}
+		\includegraphics[width=\textheight,keepaspectratio]{LC931C_single-wave-output_blockdiagram_01}
+		\caption{Overall Code with Outer Case False \& Inner Case True}
+		\label{subfig:LC931C_single-wave-output_blkdig_01}
+	\end{subfigure}%
+	\vspace{1cm}
+	\begin{subfigure}[t]{0.5\textheight}
+		\includegraphics[width=0.45\textheight,keepaspectratio]{LC931C_single-wave-output_blockdiagram_02}
+		\caption{Both Cases False}
+		\label{subfig:LC931C_single-wave-output_blkdig_02}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.5\textheight}
+		\includegraphics[width=0.45\textheight,keepaspectratio]{LC931C_single-wave-output_blockdiagram_03}
+		\caption{Outer Case True}
+		\label{subfig:LC931C_single-wave-output_blkdig_03}
+	\end{subfigure}
+	\caption{LC9310C\_single-wave-output.vi}
+	\label{fig:LC9310C_single-wave-output_blkdig-all}
+\end{sidewaysfigure}
+
+\subsubsection{LC9310C\_Norm-Pad-Hilbert.vi} \label{LC9310C_nph}
+\noindent\hrulefill
+
+\begin{figure}[H]
+	\includegraphics[scale=0.625]{LC931C_norm-pad-hilbert_main_01}
+	\label{fig:LC9310C_norm-pad-hilbert_main_01}
+\end{figure}
+
+The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC931C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+
+The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data). 
+
+\noindent\hrulefill\, \hyperref[tab:osc]{Back to Osc.\ Table \ref{tab:osc}}
+
+\begin{sidewaysfigure}[p!]
+	\includegraphics[width=\textheight,keepaspectratio]{LC931C_norm-pad-hilbert_blockdiagram_01}
+	\caption{LC9310C\_Norm-Pad-Hilbert.vi}
+	\label{fig:LC9310C_norm-pad-hilber_blkdig}
+	\vspace{2cm}
+	\includegraphics[width=\textheight,keepaspectratio]{LC931C-Config-Write-Close_blockdiagram_01}
+	\caption{LC9310C-Config-Write-Close.vi}
+	\label{fig:LC9310C-Config-Write-Closet_blkdig}
+\end{sidewaysfigure}
+
+\subsubsection{LC931C-Config-Write-Close.vi} \label{LC9310C_cwc}
+\noindent\hrulefill
+
+\begin{figure}[H]
+	\includegraphics[scale=0.625]{LC931C-Config-Write-Close_main_01}
+	\label{fig:LC9310C-Config-Write-Close_main_01}
+\end{figure}
+
+The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC931C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+
+The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data). 
+
+\noindent\hrulefill\, \hyperref[tab:osc]{Back to Osc.\ Table \ref{tab:osc}}
+
+
 \newpage
 
-\begin{table}
+\subsection{JSR Pulser/Receiver VIs}
+
+\begin{table}[H]
 	\centering
 	\begin{tabular}{ m{2.5cm} | m{5cm} | m{5cm} }
 		\hline
 		\hline \multicolumn{3}{c}{JSR Pulser/Receiver} \\ \hline \hline
 		VI & File Name & Description \\ \hline
-		\includegraphics[scale=0.625]{DPR300_Read_main} & DPR300\_Read.vi & Load Pulser/Receiver Setting from System Generated File \\ \hline
-		\includegraphics[scale=0.625]{DPR300_Int_main_02} & DPR300\_Int.vi & Initialize Pulser/Receiver Settings \\ \hline
-		\includegraphics[scale=0.625]{DPR300_settings_main_01} & DPR300\_settings.vi & Apply Settings to Pulser/Receiver \\ \hline
-		\includegraphics[scale=0.625]{DPR300-Config-Write-Close_main_01} & DPR300-Config-Write-Close.vi & Write Pulser/Receiver settings to System File and close Pulser/Receiver resources \\ \hline
+		\includegraphics[scale=0.625]{DPR300_Read_main} & \hyperref[DPR300_Read]{DPR300\_Read.vi} & Load Pulser/Receiver Setting from System Generated File \\ \hline
+		\includegraphics[scale=0.625]{DPR300_Int_main_02} & \hyperref[DPR300_Int]{DPR300\_Int.vi} & Initialize Pulser/Receiver Settings \\ \hline
+		\includegraphics[scale=0.625]{DPR300_settings_main_01} & \hyperref[DPR300_settings]{DPR300\_settings.vi} & Apply Settings to Pulser/Receiver \\ \hline
+		\includegraphics[scale=0.625]{DPR300-Config-Write-Close_main_01} & \hyperref[DPR300_cwc]{DPR300-Config-Write-Close.vi} & Write Pulser/Receiver settings to System File and close Pulser/Receiver resources \\ \hline
 	\end{tabular}
 	\caption{JSR Pulser/Receiver Custom VI's}
 	\label{tab:jsr}
 \end{table}
 
-\begin{table}
+\subsubsection{DPR300\_Read.vi} \label{DPR300_Read}
+\noindent\hrulefill
+
+\begin{figure}[h]
+	\includegraphics[scale=0.625]{DPR300_Read_main}
+	\label{fig:DPR300_Read_main}
+\end{figure}
+
+The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC9310C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+
+The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data).
+
+\noindent\hrulefill\, \hyperref[tab:jsr]{Back to JSR Table \ref{tab:jsr}}
+
+\subsubsection{DPR300\_Int.vi} \label{DPR300_Int}
+\noindent\hrulefill
+
+\begin{figure}[h]
+	\includegraphics[scale=0.625]{DPR300_Int_main_02}
+	\label{fig:DPR300_Int_main_02}
+\end{figure}
+
+The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC9310C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+
+The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data).
+
+\noindent\hrulefill\, \hyperref[tab:jsr]{Back to JSR Table \ref{tab:jsr}}
+
+\subsubsection{DPR300\_Settings.vi} \label{DPR300_settings}
+\noindent\hrulefill
+
+\begin{figure}[h]
+	\includegraphics[scale=0.625]{DPR300_settings_main_01}
+	\label{fig:DPR300_settings_main_01}
+\end{figure}
+
+The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC9310C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+
+The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data).
+
+\noindent\hrulefill\, \hyperref[tab:jsr]{Back to JSR Table \ref{tab:jsr}}
+
+\subsubsection{DPR300-Config-Write-Close.vi} \label{DPR300_cwc}
+\noindent\hrulefill
+
+\begin{figure}[h]
+	\includegraphics[scale=0.625]{DPR300-Config-Write-Close_main_01}
+	\label{fig:DPR300-Config-Write-Close_main_01}
+\end{figure}
+
+The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC9310C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+
+The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data).
+
+\noindent\hrulefill\, \hyperref[tab:jsr]{Back to JSR Table \ref{tab:jsr}}
+
+\newpage
+
+\subsection{Ultrasonic Package VIs}
+
+\begin{table}[H]
 	\centering
 	\begin{tabular}{ m{2.5cm} | m{5cm} | m{5cm} }
 		\hline
 		\hline \multicolumn{3}{c}{Ultrasonic Package} \\ \hline \hline
 		VI & File Name & Description \\ \hline
-		\includegraphics[scale=0.625]{USonic-A-Scan-Config-edit_main_01} & USonic-A-Scan-Config-edit.vi & Configure/Set Gates for Data Acquisition \\ \hline
-		\includegraphics[scale=0.625]{USonic-A-Scan-Config-edit_main_01} & USonic-Gates-edit.vi & Pull Out Relevant Data from Gates for Data Acquisition \\ \hline
-		\includegraphics[scale=0.625]{USonic-FFT_main_01} & USonic-FFT.vi & Process Gate For Quick Analysis \\ \hline
+		\includegraphics[scale=0.625]{USonic-A-Scan-Config-edit_main_01} & \hyperref[USonic-Config]{USonic-A-Scan-Config-edit.vi} & Configure/Set Gates for Data Acquisition \\ \hline
+		\includegraphics[scale=0.625]{USonic-A-Scan-Config-edit_main_01} & \hyperref[USonic-Gates]{USonic-Gates-edit.vi} & Pull Out Relevant Data from Gates for Data Acquisition \\ \hline
+		\includegraphics[scale=0.625]{USonic-FFT_main_01} & \hyperref[USonic-FFT]{USonic-FFT.vi} & Process Gate For Quick Analysis \\ \hline
 	\end{tabular}
 	\caption{Ultrasonic A-Scan Customized Package VI's}
 	\label{tab:usonic}
 \end{table}
 
-\begin{table}
+\subsubsection{USonic-A-Scan-Config-edit.vi} \label{USonic-Config}
+\noindent\hrulefill
+
+\begin{figure}[h]
+	\includegraphics[scale=0.625]{USonic-A-Scan-Config-edit_main_01}
+	\label{fig:USonic-A-Scan-Config-edit_main_01}
+\end{figure}
+
+The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC9310C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+
+The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data).
+
+\noindent\hrulefill\, \hyperref[tab:usonic]{Back to USonic Table \ref{tab:usonic}}
+
+\subsubsection{USonic-Gates-edit.vi} \label{USonic-Gates}
+\noindent\hrulefill
+
+\begin{figure}[h]
+	\includegraphics[scale=0.625]{USonic-FFT_main_01}
+	\label{fig:USonic-Gates-edit_main_01}
+\end{figure}
+
+The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC9310C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+
+The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data).
+
+\noindent\hrulefill\, \hyperref[tab:usonic]{Back to USonic Table \ref{tab:usonic}}
+
+\subsubsection{USonic-FFT.vi} \label{USonic-FFT}
+\noindent\hrulefill
+
+\begin{figure}[h]
+	\includegraphics[scale=0.625]{USonic-FFT_main_01}
+	\label{fig:USonic-FFT_main_01}
+\end{figure}
+
+The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC9310C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+
+The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data).
+
+\noindent\hrulefill\, \hyperref[tab:usonic]{Back to USonic Table \ref{tab:usonic}}
+
+\newpage
+
+\subsection{Math VIs}
+
+\begin{table}[H]
 	\centering
 	\begin{tabular}{ m {2.5cm} | m{5cm} | m{5cm} }
 		\hline
 		\hline \multicolumn{3}{c}{Math} \\ \hline \hline
 		VI & File Name & Description \\ \hline
-		\includegraphics[scale=0.625]{Waveform-to-XY-Array_main_01} & Waveform-to-XY-Array.vi & Convert Waveform to XY-Array \\ \hline
-		\includegraphics[scale=0.625]{Filter_signal_main_01} & Filter\_signal.vi & Filter Wave Signal for Oscilloscope Tab (does not affect Data Acquisition) \\ \hline
-		\includegraphics[scale=0.625]{Average-Dynamic-Array_main_01} & Average-Dynamic-Array.vi & Take the Average of N elements in a Dynamic Array \\ \hline
-		\includegraphics[scale=0.625]{FWHM-Poly_main_01} & FWHM-Poly.vi & Compute the Full Width Half Max (FWHM) of either a Waveform, XY-Graph, or Waveform cluster \\ \hline
+		\includegraphics[scale=0.625]{Waveform-to-XY-Array_main_01} & \hyperref[Waveform-to-XY-Array]{Waveform-to-XY-Array.vi} & Convert Waveform to XY-Array \\ \hline
+		\includegraphics[scale=0.625]{Filter_signal_main_01} & \hyperref[Filter_signal]{Filter\_signal.vi} & Filter Wave Signal for Oscilloscope Tab (does not affect Data Acquisition) \\ \hline
+		\includegraphics[scale=0.625]{Average-Dynamic-Array_main_01} & \hyperref[Average-Dynamic-Array]{Average-Dynamic-Array.vi} & Take the Average of N elements in a Dynamic Array \\ \hline
+		\includegraphics[scale=0.625]{FWHM-Poly_main_01} & \hyperref[FWHM-Poly]{FWHM-Poly.vi} & Compute the Full Width Half Max (FWHM) of either a Waveform, XY-Graph, or Waveform cluster \\ \hline
 		\hline
 	\end{tabular}
 	\caption{Custom Math VI's}
 	\label{tab:math}
 \end{table}
 
-\begin{table}
+\subsubsection{Waveform-to-XY-Array.vi} \label{Waveform-to-XY-Array}
+\noindent\hrulefill
+
+\begin{figure}[h]
+	\includegraphics[scale=0.625]{Waveform-to-XY-Array_main_01}
+	\label{fig:Waveform-to-XY-Array_main_01}
+\end{figure}
+
+The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC9310C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+
+The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data).
+
+\noindent\hrulefill\, \hyperref[tab:math]{Back to Miscellaneous Table \ref{tab:math}}
+
+\subsubsection{Filter\_signal.vi} \label{Filter_signal}
+\noindent\hrulefill
+
+\begin{figure}[h]
+	\includegraphics[scale=0.625]{Filter_signal_main_01}
+	\label{fig:Filter_signal_main_01}
+\end{figure}
+
+The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC9310C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+
+The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data).
+
+\noindent\hrulefill\, \hyperref[tab:math]{Back to Math Table \ref{tab:math}}
+
+\subsubsection{Average-Dynamic-Array.vi} \label{Average-Dynamic-Array}
+\noindent\hrulefill
+
+\begin{figure}[h]
+	\includegraphics[scale=0.625]{Average-Dynamic-Array_main_01}
+	\label{fig:Average-Dynamic-Array_main_01}
+\end{figure}
+
+The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC9310C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+
+The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data).
+
+\noindent\hrulefill\, \hyperref[tab:math]{Back to Math Table \ref{tab:math}}
+
+\subsubsection{FWHM-Poly.vi} \label{FWHM-Poly}
+\noindent\hrulefill
+
+\begin{figure}[h]
+	\includegraphics[scale=0.625]{FWHM-Poly_main_01}
+	\label{fig:FWHM-Poly_main_01}
+\end{figure}
+
+The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC9310C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+
+The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data).
+
+\noindent\hrulefill\, \hyperref[tab:math]{Back to Math Table \ref{tab:math}}
+
+\newpage
+
+\subsection{Miscellaneous VIs}
+
+\begin{table}[H]
 	\centering
 	\begin{tabular}{ m {2.5cm} | m{5cm} | m{5cm} }
 		\hline
 		\hline \multicolumn{3}{c}{Miscellaneous} \\ \hline \hline
 		VI & File Name & Description \\ \hline
-		\includegraphics[scale=0.625]{Save-User-Config-File_main_01} & Save-User-Config-File.vi & Save all front panel controls to a user.ini settings file \\ \hline		
-		\includegraphics[scale=0.625]{Load-User-Config-File_main_01} & Load-User-Config-File.vi & Load the user.ini settings file \\ \hline
-		\includegraphics[scale=0.625]{Time-Data_main_01} & Time-Data.vi & Load and Save Data Timing table \\ \hline
-		\includegraphics[scale=0.625]{Instrument-error-handler_main_01} & Instrument-error-handler.vi & Pop-up error message for loss of Instrument signal\\ \hline
+		\includegraphics[scale=0.625]{Save-User-Config-File_main_01} & \hyperref[Save-User-Config-File]{Save-User-Config-File.vi} & Save all front panel controls to a user.ini settings file \\ \hline		
+		\includegraphics[scale=0.625]{Load-User-Config-File_main_01} & \hyperref[Load-User-Config-File]{Load-User-Config-File.vi} & Load the user.ini settings file \\ \hline
+		\includegraphics[scale=0.625]{Time-Data_main_01} & \hyperref[Time-Data]{Time-Data.vi} & Load and Save Data Timing table \\ \hline
+		\includegraphics[scale=0.625]{Instrument-error-handler_main_01} & \hyperref[IEH]{Instrument-error-handler.vi} & Pop-up error message for loss of Instrument signal\\ \hline
 		\hline
 	\end{tabular}
 	\caption{Miscellaneous Custom VI's}
 	\label{tab:misc}
 \end{table}
 
-\section{Operation}
+\subsubsection{Save-User-Config-File.vi} \label{Save-User-Config-File}
+\noindent\hrulefill
 
+\begin{figure}[h]
+	\includegraphics[scale=0.625]{Save-User-Config-File_main_01}
+	\label{fig:Save-User-Config-File_main_01}
+\end{figure}
+
+The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC9310C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+
+The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data).
+
+\noindent\hrulefill\, \hyperref[tab:misc]{Back to Misc.\ Table \ref{tab:misc}}
+
+\subsubsection{Load-User-Config-File.vi} \label{Load-User-Config-File}
+\noindent\hrulefill
+
+\begin{figure}[h]
+	\includegraphics[scale=0.625]{Load-User-Config-File_main_01}
+	\label{fig:Load-User-Config-File_main_01}
+\end{figure}
+
+The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC9310C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+
+The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data).
+
+\noindent\hrulefill\, \hyperref[tab:misc]{Back to Misc.\ Table \ref{tab:misc}}
+
+\subsubsection{Time-Data.vi} \label{Time-Data}
+\noindent\hrulefill
+
+\begin{figure}[h]
+	\includegraphics[scale=0.625]{Time-Data_main_01}
+	\label{fig:Time-Data_main_01}
+\end{figure}
+
+The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC9310C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+
+The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data).
+
+\noindent\hrulefill\, \hyperref[tab:misc]{Back to Misc.\ Table \ref{tab:misc}}
+
+\subsubsection{Instrument-Error-Handler.vi} \label{IEH}
+\noindent\hrulefill
+
+\begin{figure}[h]
+	\includegraphics[scale=0.625]{Instrument-error-handler_main_01}
+	\label{fig:Instrument-error-handler_main_01}
+\end{figure}
+
+The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC9310C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+
+The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data).
+
+\noindent\hrulefill\, \hyperref[tab:misc]{Back to Misc.\ Table \ref{tab:misc}}
+
+\chapter{Operation}
+
+\section{File Management}
+
+\section{Data Acquisition}
 
 
 \bibliography{ultrasound-ref-01}
