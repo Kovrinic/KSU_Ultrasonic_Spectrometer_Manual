@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.8)  11 MAY 2015 06:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.8)  11 MAY 2015 23:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1024,95 +1024,96 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
 (./Ultrasonic_Spectrometer_Manual_main.toc
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
-[2]) [3] [4
-
-]
+[2]) [3] (./Ultrasonic_Spectrometer_Manual_main.lof) (./Ultrasonic_Spectrometer
+_Manual_main.lot) [4]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 94.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 97.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 96.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 99.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 96.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 99.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 102.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 102.
-[5] [6
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 105.
+[5
+
+] [6
 
 ] [7] [8
 
 ]
 
 LaTeX Warning: Reference `fig:LC931C_Read_main' on page 9 undefined on input li
-ne 118.
+ne 121.
 
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_main.png, id=245, 105.3937
+<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_main.png, id=280, 105.3937
 5pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_main.png Graphic file
  (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_main.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_ma
-in.png used on input line 136.
+in.png used on input line 139.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_main_02.png, id=247, 105.39
+<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_main_02.png, id=282, 105.39
 375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_main_02.png Graphic fi
 le (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_main_02.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_mai
-n_02.png used on input line 137.
+n_02.png used on input line 140.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_main_01.png, id=249, 1
+<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_main_01.png, id=284, 1
 05.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_main_01.png Graph
 ic file (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_setting
-s_main_01.png used on input line 138.
+s_main_01.png used on input line 141.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-wave-output_main_01.png,
- id=251, 105.39375pt x 64.24pt>
+ id=286, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-wave-output_main_01
 .png Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-wave-output_main_01.
 png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-
-wave-output_main_01.png used on input line 139.
+wave-output_main_01.png used on input line 142.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--139
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
 []|[][]\T1/ptm/m/n/10.95 (+20) LC9310C_single-wave-
  []
 
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_norm-pad-hilbert_main_01.png, i
-d=253, 105.39375pt x 64.24pt>
+d=288, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_norm-pad-hilbert_main_01.p
 ng Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_norm-pad-hilbert_main_01.pn
 g>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_norm-pa
-d-hilbert_main_01.png used on input line 140.
+d-hilbert_main_01.png used on input line 143.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-Config-Write-Close_main_01.png,
- id=255, 105.39375pt x 64.24pt>
+ id=290, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-Config-Write-Close_main_01
 .png Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-Config-Write-Close_main_01.
 png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-Config-
-Write-Close_main_01.png used on input line 141.
+Write-Close_main_01.png used on input line 144.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 []|[][]\T1/ptm/m/n/10.95 (+20) LC9310C-Config-Write-
  []
 
@@ -1121,30 +1122,30 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [9]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 147.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 150.
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_main.png Graphic file
  (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_main.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_ma
-in.png used on input line 151.
+in.png used on input line 154.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_blockdiagram.png, id=267, 
+<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_blockdiagram.png, id=300, 
 1232.605pt x 360.34625pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_blockdiagram.png Grap
 hic file (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_blockdiagram.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_bl
-ockdiagram.png used on input line 162.
+ockdiagram.png used on input line 165.
 (pdftex.def)             Requested size: 702.78308pt x 205.45998pt.
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_blockdiagram.png, id=268, 1
+<figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_blockdiagram.png, id=301, 1
 485.55pt x 501.875pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_blockdiagram.png Graph
 ic file (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_blockdiagram.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_blo
-ckdiagram.png used on input line 165.
+ckdiagram.png used on input line 168.
 (pdftex.def)             Requested size: 702.78308pt x 237.42819pt.
 [10 <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_main.png (PNG copy)>
  <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_main_02.png (PNG copy)> 
@@ -1157,7 +1158,7 @@ File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_main_02.png Graphic fi
 le (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_main_02.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int_mai
-n_02.png used on input line 174.
+n_02.png used on input line 177.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1166,21 +1167,21 @@ File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_main_01.png Graph
 ic file (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_setting
-s_main_01.png used on input line 190.
+s_main_01.png used on input line 193.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_blockdiagram_01.png, i
-d=285, 1016.79875pt x 382.42876pt>
+d=317, 1016.79875pt x 382.42876pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_blockdiagram_01.p
 ng Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_blockdiagram_01.pn
 g>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_setting
-s_blockdiagram_01.png used on input line 199.
+s_blockdiagram_01.png used on input line 202.
 (pdftex.def)             Requested size: 455.24413pt x 171.22186pt.
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-wave-output_main_01
 .png Graphic file (type png)
@@ -1188,46 +1189,46 @@ File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-wave-output_main_01
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-wave-output_main_01.
 png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-
-wave-output_main_01.png used on input line 208.
+wave-output_main_01.png used on input line 211.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 [11 <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_settings_blockdiagram_01.
 png (PNG copy)>] [12 <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Read_blo
 ckdiagram.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_Int
 _blockdiagram.png (PNG copy)>]
 <figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-wave-output_blockdiagram
-_01.png, id=305, 1093.08376pt x 309.155pt>
+_01.png, id=337, 1093.08376pt x 309.155pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-wave-output_blockdi
 agram_01.png Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-wave-output_blockdia
 gram_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-
-wave-output_blockdiagram_01.png used on input line 220.
+wave-output_blockdiagram_01.png used on input line 223.
 (pdftex.def)             Requested size: 702.78308pt x 198.76895pt.
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-wave-output_blockdiagram
-_02.png, id=306, 433.62pt x 226.8475pt>
+_02.png, id=338, 433.62pt x 226.8475pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-wave-output_blockdi
 agram_02.png Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-wave-output_blockdia
 gram_02.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-
-wave-output_blockdiagram_02.png used on input line 226.
+wave-output_blockdiagram_02.png used on input line 229.
 (pdftex.def)             Requested size: 316.25023pt x 165.4519pt.
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-wave-output_blockdiagram
-_03.png, id=307, 433.62pt x 226.8475pt>
+_03.png, id=339, 433.62pt x 226.8475pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-wave-output_blockdi
 agram_03.png Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-wave-output_blockdia
 gram_03.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-
-wave-output_blockdiagram_03.png used on input line 231.
+wave-output_blockdiagram_03.png used on input line 234.
 (pdftex.def)             Requested size: 316.25023pt x 165.4519pt.
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 219--235
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 222--238
 [] [] 
  []
 
@@ -1237,36 +1238,32 @@ ng Graphic file (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_norm-pad-hilbert_main_01.pn
 g>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_norm-pa
-d-hilbert_main_01.png used on input line 243.
+d-hilbert_main_01.png used on input line 246.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
-
-LaTeX Warning: Reference `fig:LC931C_Read_blkdig' on page 13 undefined on input
- line 247.
-
 [13] [14 <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_single-wave-output_b
 lockdiagram_01.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931
 C_single-wave-output_blockdiagram_02.png (PNG copy)> <./figures/ASUDS_block_dia
 gram(s)_5-2-2015/LC931C_single-wave-output_blockdiagram_03.png (PNG copy)>]
 <figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_norm-pad-hilbert_blockdiagram_0
-1.png, id=327, 1935.23pt x 341.275pt>
+1.png, id=358, 1935.23pt x 341.275pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_norm-pad-hilbert_blockdiag
 ram_01.png Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_norm-pad-hilbert_blockdiagr
 am_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_norm-pa
-d-hilbert_blockdiagram_01.png used on input line 254.
+d-hilbert_blockdiagram_01.png used on input line 261.
 (pdftex.def)             Requested size: 702.78308pt x 123.93683pt.
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-Config-Write-Close_blockdiagram
-_01.png, id=328, 1403.2425pt x 356.33125pt>
+_01.png, id=359, 1403.2425pt x 356.33125pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-Config-Write-Close_blockdi
 agram_01.png Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-Config-Write-Close_blockdia
 gram_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-Config-
-Write-Close_blockdiagram_01.png used on input line 258.
+Write-Close_blockdiagram_01.png used on input line 265.
 (pdftex.def)             Requested size: 702.78308pt x 178.46422pt.
 File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-Config-Write-Close_main_01
 .png Graphic file (type png)
@@ -1274,69 +1271,73 @@ File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-Config-Write-Close_main_01
 <use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-Config-Write-Close_main_01.
 png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-Config-
-Write-Close_main_01.png used on input line 267.
+Write-Close_main_01.png used on input line 274.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
+File: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-Config-Write-Close_blockdi
+agram_01.png Graphic file (type png)
 
-LaTeX Warning: Reference `fig:LC931C_Read_blkdig' on page 15 undefined on input
- line 271.
-
+<use figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-Config-Write-Close_blockdia
+gram_01.png>
+Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-Config-
+Write-Close_blockdiagram_01.png used on input line 289.
+(pdftex.def)             Requested size: 702.78308pt x 178.46422pt.
 [15] [16 <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931C_norm-pad-hilbert_blo
 ckdiagram_01.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/LC931C-
-Config-Write-Close_blockdiagram_01.png (PNG copy)>]
-<figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_main.png, id=342, 105.3937
+Config-Write-Close_blockdiagram_01.png (PNG copy)>] [17]
+<figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_main.png, id=377, 105.3937
 5pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_main.png Graphic file
  (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_main.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_ma
-in.png used on input line 288.
+in.png used on input line 304.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-Underfull \hbox (badness 4752) in paragraph at lines 288--288
+Underfull \hbox (badness 4752) in paragraph at lines 304--304
 []|\T1/ptm/m/n/10.95 (+20) Load Pulser/Receiver Set-ting
  []
 
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Int_main_02.png, id=344, 105.39
+<figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Int_main_02.png, id=379, 105.39
 375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Int_main_02.png Graphic fi
 le (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Int_main_02.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Int_mai
-n_02.png used on input line 289.
+n_02.png used on input line 305.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-Underfull \hbox (badness 3375) in paragraph at lines 289--289
+Underfull \hbox (badness 3375) in paragraph at lines 305--305
 []|\T1/ptm/m/n/10.95 (+20) Initialize Pulser/Receiver Set-
  []
 
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_settings_main_01.png, id=346, 1
+<figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_settings_main_01.png, id=381, 1
 05.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_settings_main_01.png Graph
 ic file (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_settings_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_setting
-s_main_01.png used on input line 290.
+s_main_01.png used on input line 306.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--290
+Underfull \hbox (badness 10000) in paragraph at lines 306--306
 []|\T1/ptm/m/n/10.95 (+20) Apply Set-tings to
  []
 
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/DPR300-Config-Write-Close_main_01.png,
- id=348, 105.39375pt x 64.24pt>
+ id=383, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300-Config-Write-Close_main_01
 .png Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/DPR300-Config-Write-Close_main_01.
 png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300-Config-
-Write-Close_main_01.png used on input line 291.
+Write-Close_main_01.png used on input line 307.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--291
+Underfull \hbox (badness 10000) in paragraph at lines 307--307
 \T1/ptm/m/n/10.95 (+20) to Sys-tem File and close
  []
 
@@ -1344,49 +1345,74 @@ File: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_main.png Graphic file
  (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_main.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_ma
-in.png used on input line 301.
+in.png used on input line 317.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
+
+<figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_blockdiagram.png, id=389, 
+1141.26375pt x 337.26pt>
+File: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_blockdiagram.png Grap
+hic file (type png)
+<use figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_blockdiagram.png>
+Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_bl
+ockdiagram.png used on input line 328.
+(pdftex.def)             Requested size: 702.78308pt x 207.68384pt.
+
+<figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Int_blockdiagram_01.png, id=390
+, 1937.2375pt x 397.485pt>
+File: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Int_blockdiagram_01.png Gr
+aphic file (type png)
+<use figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Int_blockdiagram_01.png>
+Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Int_blo
+ckdiagram_01.png used on input line 331.
+(pdftex.def)             Requested size: 702.78308pt x 144.19833pt.
 File: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Int_main_02.png Graphic fi
 le (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Int_main_02.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Int_mai
-n_02.png used on input line 315.
+n_02.png used on input line 340.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17 <./figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_main.png (PNG copy)>
+[18 <./figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_main.png (PNG copy)>
  <./figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Int_main_02.png (PNG copy)> 
 <./figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_settings_main_01.png (PNG cop
 y)> <./figures/ASUDS_block_diagram(s)_5-2-2015/DPR300-Config-Write-Close_main_0
-1.png (PNG copy)>]
+1.png (PNG copy)>] [19 <./figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_Read_b
+lockdiagram.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_I
+nt_blockdiagram_01.png (PNG copy)>]
 File: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_settings_main_01.png Graph
 ic file (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_settings_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300_setting
-s_main_01.png used on input line 329.
+s_main_01.png used on input line 356.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
+
+LaTeX Warning: Reference `fig:DPR300_settings_blkdig_01' on page 20 undefined o
+n input line 360.
+
 File: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300-Config-Write-Close_main_01
 .png Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/DPR300-Config-Write-Close_main_01.
 png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/DPR300-Config-
-Write-Close_main_01.png used on input line 343.
+Write-Close_main_01.png used on input line 368.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `fig:LC931C-Config-Write-Close_blkdig' on page 20 unde
+fined on input line 372.
 
-[18] [19]
+[20] [21]
 <figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-Config-edit_main_01.png,
- id=383, 105.39375pt x 64.24pt>
+ id=423, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-Config-edit_main_01
 .png Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-Config-edit_main_01.
 png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-
-Config-edit_main_01.png used on input line 363.
+Config-edit_main_01.png used on input line 392.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 File: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-Config-edit_main_01
 .png Graphic file (type png)
@@ -1394,21 +1420,21 @@ File: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-Config-edit_main_01
 <use figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-Config-edit_main_01.
 png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-
-Config-edit_main_01.png used on input line 364.
+Config-edit_main_01.png used on input line 393.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-Underfull \hbox (badness 1092) in paragraph at lines 364--364
+Underfull \hbox (badness 1092) in paragraph at lines 393--393
 []|\T1/ptm/m/n/10.95 (+20) Pull Out Rel-e-vant Data from
  []
 
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/USonic-FFT_main_01.png, id=386, 105.39
+<figures/ASUDS_block_diagram(s)_5-2-2015/USonic-FFT_main_01.png, id=426, 105.39
 375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-FFT_main_01.png Graphic fi
 le (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/USonic-FFT_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-FFT_mai
-n_01.png used on input line 365.
+n_01.png used on input line 394.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 File: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-Config-edit_main_01
 .png Graphic file (type png)
@@ -1416,78 +1442,78 @@ File: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-Config-edit_main_01
 <use figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-Config-edit_main_01.
 png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-
-Config-edit_main_01.png used on input line 375.
+Config-edit_main_01.png used on input line 404.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 File: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-FFT_main_01.png Graphic fi
 le (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/USonic-FFT_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-FFT_mai
-n_01.png used on input line 389.
+n_01.png used on input line 418.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
-[20 <./figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-Config-edit_main_0
+[22 <./figures/ASUDS_block_diagram(s)_5-2-2015/USonic-A-Scan-Config-edit_main_0
 1.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/USonic-FFT_main_01
 .png (PNG copy)>]
 File: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-FFT_main_01.png Graphic fi
 le (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/USonic-FFT_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/USonic-FFT_mai
-n_01.png used on input line 403.
+n_01.png used on input line 432.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
-[21]
+[23]
 <figures/ASUDS_block_diagram(s)_5-2-2015/Waveform-to-XY-Array_main_01.png, id=4
-13, 105.39375pt x 64.24pt>
+51, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/Waveform-to-XY-Array_main_01.png 
 Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Waveform-to-XY-Array_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Waveform-to-XY
--Array_main_01.png used on input line 423.
+-Array_main_01.png used on input line 452.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/Filter_signal_main_01.png, id=415, 105
+<figures/ASUDS_block_diagram(s)_5-2-2015/Filter_signal_main_01.png, id=453, 105
 .39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/Filter_signal_main_01.png Graphic
  file (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Filter_signal_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Filter_signal_
-main_01.png used on input line 424.
+main_01.png used on input line 453.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/Average-Dynamic-Array_main_01.png, id=
-417, 105.39375pt x 64.24pt>
+455, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/Average-Dynamic-Array_main_01.png
  Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Average-Dynamic-Array_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Average-Dynami
-c-Array_main_01.png used on input line 425.
+c-Array_main_01.png used on input line 454.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/FWHM-Poly_main_01.png, id=419, 105.393
+<figures/ASUDS_block_diagram(s)_5-2-2015/FWHM-Poly_main_01.png, id=457, 105.393
 75pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/FWHM-Poly_main_01.png Graphic fil
 e (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/FWHM-Poly_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/FWHM-Poly_main
-_01.png used on input line 426.
+_01.png used on input line 455.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 File: figures/ASUDS_block_diagram(s)_5-2-2015/Waveform-to-XY-Array_main_01.png 
 Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Waveform-to-XY-Array_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Waveform-to-XY
--Array_main_01.png used on input line 437.
+-Array_main_01.png used on input line 466.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 File: figures/ASUDS_block_diagram(s)_5-2-2015/Filter_signal_main_01.png Graphic
  file (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Filter_signal_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Filter_signal_
-main_01.png used on input line 451.
+main_01.png used on input line 480.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22 <./figures/ASUDS_block_diagram(s)_5-2-2015/Waveform-to-XY-Array_main_01.png
+[24 <./figures/ASUDS_block_diagram(s)_5-2-2015/Waveform-to-XY-Array_main_01.png
  (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/Filter_signal_main_01.p
 ng (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/Average-Dynamic-Array
 _main_01.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/FWHM-Poly_m
@@ -1497,75 +1523,75 @@ File: figures/ASUDS_block_diagram(s)_5-2-2015/Average-Dynamic-Array_main_01.png
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Average-Dynamic-Array_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Average-Dynami
-c-Array_main_01.png used on input line 465.
+c-Array_main_01.png used on input line 494.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 File: figures/ASUDS_block_diagram(s)_5-2-2015/FWHM-Poly_main_01.png Graphic fil
 e (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/FWHM-Poly_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/FWHM-Poly_main
-_01.png used on input line 479.
+_01.png used on input line 508.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[23] [24]
+[25] [26]
 <figures/ASUDS_block_diagram(s)_5-2-2015/Save-User-Config-File_main_01.png, id=
-454, 105.39375pt x 64.24pt>
+492, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/Save-User-Config-File_main_01.png
  Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Save-User-Config-File_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Save-User-Conf
-ig-File_main_01.png used on input line 499.
+ig-File_main_01.png used on input line 528.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/Load-User-Config-File_main_01.png, id=
-456, 105.39375pt x 64.24pt>
+494, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/Load-User-Config-File_main_01.png
  Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Load-User-Config-File_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Load-User-Conf
-ig-File_main_01.png used on input line 500.
+ig-File_main_01.png used on input line 529.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
-<figures/ASUDS_block_diagram(s)_5-2-2015/Time-Data_main_01.png, id=458, 105.393
+<figures/ASUDS_block_diagram(s)_5-2-2015/Time-Data_main_01.png, id=496, 105.393
 75pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/Time-Data_main_01.png Graphic fil
 e (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Time-Data_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Time-Data_main
-_01.png used on input line 501.
+_01.png used on input line 530.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
 <figures/ASUDS_block_diagram(s)_5-2-2015/Instrument-error-handler_main_01.png, 
-id=460, 105.39375pt x 64.24pt>
+id=498, 105.39375pt x 64.24pt>
 File: figures/ASUDS_block_diagram(s)_5-2-2015/Instrument-error-handler_main_01.
 png Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Instrument-error-handler_main_01.p
 ng>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Instrument-err
-or-handler_main_01.png used on input line 502.
+or-handler_main_01.png used on input line 531.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 File: figures/ASUDS_block_diagram(s)_5-2-2015/Save-User-Config-File_main_01.png
  Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Save-User-Config-File_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Save-User-Conf
-ig-File_main_01.png used on input line 513.
+ig-File_main_01.png used on input line 542.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 File: figures/ASUDS_block_diagram(s)_5-2-2015/Load-User-Config-File_main_01.png
  Graphic file (type png)
 
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Load-User-Config-File_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Load-User-Conf
-ig-File_main_01.png used on input line 527.
+ig-File_main_01.png used on input line 556.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25 <./figures/ASUDS_block_diagram(s)_5-2-2015/Save-User-Config-File_main_01.pn
+[27 <./figures/ASUDS_block_diagram(s)_5-2-2015/Save-User-Config-File_main_01.pn
 g (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/Load-User-Config-File_
 main_01.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/Time-Data_ma
 in_01.png (PNG copy)> <./figures/ASUDS_block_diagram(s)_5-2-2015/Instrument-err
@@ -1574,7 +1600,7 @@ File: figures/ASUDS_block_diagram(s)_5-2-2015/Time-Data_main_01.png Graphic fil
 e (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Time-Data_main_01.png>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Time-Data_main
-_01.png used on input line 541.
+_01.png used on input line 570.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 File: figures/ASUDS_block_diagram(s)_5-2-2015/Instrument-error-handler_main_01.
 png Graphic file (type png)
@@ -1582,40 +1608,46 @@ png Graphic file (type png)
 <use figures/ASUDS_block_diagram(s)_5-2-2015/Instrument-error-handler_main_01.p
 ng>
 Package pdftex.def Info: figures/ASUDS_block_diagram(s)_5-2-2015/Instrument-err
-or-handler_main_01.png used on input line 555.
+or-handler_main_01.png used on input line 584.
 (pdftex.def)             Requested size: 65.87091pt x 40.14989pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26] [27] [28
+[28] [29] [30
 
-] (./Ultrasonic_Spectrometer_Manual_main.bbl [29] [30
+] (./Ultrasonic_Spectrometer_Manual_main.bbl [31] [32
 
 ]
 bibitemlist
-) [31]
+) [33]
 \tf@toc=\write5
 \openout5 = `Ultrasonic_Spectrometer_Manual_main.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 575.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 575.
+\tf@lof=\write6
+\openout6 = `Ultrasonic_Spectrometer_Manual_main.lof'.
+
+\tf@lot=\write7
+\openout7 = `Ultrasonic_Spectrometer_Manual_main.lot'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 604.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 604.
 (./Ultrasonic_Spectrometer_Manual_main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 575.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 575.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 604.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 604.
 Package rerunfilecheck Info: File `Ultrasonic_Spectrometer_Manual_main.out' has
  not changed.
-(rerunfilecheck)             Checksum: 73D9D9B4E29CC7E782FA3CD1090A6EF7;2811.
+(rerunfilecheck)             Checksum: B6584F7BFCABAB8A8A60A6F607027559;2915.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 575.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 604.
  ) 
 Here is how much of TeX's memory you used:
- 14373 strings out of 494424
- 220893 string characters out of 6165347
- 375730 words of memory out of 5000000
- 17193 multiletter control sequences out of 15000+600000
- 67755 words of font info for 154 fonts, out of 8000000 for 9000
+ 14433 strings out of 494424
+ 222214 string characters out of 6165347
+ 375985 words of memory out of 5000000
+ 17209 multiletter control sequences out of 15000+600000
+ 69340 words of font info for 174 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
  40i,16n,38p,1124b,568s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1625,11 +1657,11 @@ onts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
 mb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Ultrasonic_Spectrometer_Manual_main.pdf (31 pages, 479664 byt
+Output written on Ultrasonic_Spectrometer_Manual_main.pdf (33 pages, 588258 byt
 es).
 PDF statistics:
- 563 PDF objects out of 1000 (max. 8388607)
- 490 compressed objects within 5 object streams
- 102 named destinations out of 1000 (max. 500000)
- 32701 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 601 PDF objects out of 1000 (max. 8388607)
+ 523 compressed objects within 6 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 32727 words of extra memory for PDF output out of 35830 (max. 10000000)
 
