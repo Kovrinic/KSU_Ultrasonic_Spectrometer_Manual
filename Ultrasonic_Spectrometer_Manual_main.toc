@@ -23,7 +23,7 @@
 \contentsline {subsection}{\numberline {3.2.3}Ultrasonic Package VIs}{23}{subsection.3.2.3}
 \contentsline {subsubsection}{\numberline {3.2.3.1}USonic-A-Scan-Config-edit.vi}{23}{subsubsection.3.2.3.1}
 \contentsline {subsubsection}{\numberline {3.2.3.2}USonic-Gates-edit.vi}{23}{subsubsection.3.2.3.2}
-\contentsline {subsubsection}{\numberline {3.2.3.3}USonic-FFT.vi}{24}{subsubsection.3.2.3.3}
+\contentsline {subsubsection}{\numberline {3.2.3.3}USonic-FFT.vi}{23}{subsubsection.3.2.3.3}
 \contentsline {subsection}{\numberline {3.2.4}Math VIs}{25}{subsection.3.2.4}
 \contentsline {subsubsection}{\numberline {3.2.4.1}Waveform-to-XY-Array.vi}{25}{subsubsection.3.2.4.1}
 \contentsline {subsubsection}{\numberline {3.2.4.2}Filter\_signal.vi}{25}{subsubsection.3.2.4.2}
@@ -37,4 +37,4 @@
 \contentsline {chapter}{\chapternumberline {4}Operation}{31}{chapter.4}
 \contentsline {section}{\numberline {4.1}File Management}{31}{section.4.1}
 \contentsline {section}{\numberline {4.2}Data Acquisition}{31}{section.4.2}
-\contentsline {chapter}{Bibliography}{33}{section*.38}
+\contentsline {chapter}{Bibliography}{33}{section*.39}

@@ -412,9 +412,7 @@ The \textbf{MGI Write Anything} VI takes the information from each cluster and p
 	\label{fig:USonic-A-Scan-Config-edit_main_01}
 \end{figure}
 
-The USonic-A-Scan-Config-edit.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC9310C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
-
-The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data).
+The USonic-A-Scan-Config-edit.vi reads the \textbf {Gate Configuration} cluster and applies it to the \textbf{Data In} waveform cluster. It also finds the peak to peak time (time of fight). This VI was edited from the \href{http://www.ni.com/example/28618/en/}{Ultrasonic Non-destructive Testing Starter Kit} to fit our needs. The VI outputs the waveform cluster graph with the gates overlaid as-well-as it outputting the paired gate information for data analysis.
 
 \noindent\hrulefill\, \hyperref[tab:usonic]{Back to USonic Table \ref{tab:usonic}}
 
@@ -426,9 +424,7 @@ The for loop steps through each list section of the ".ini" file. Each list secti
 	\label{fig:USonic-Gates-edit_main_01}
 \end{figure}
 
-The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC9310C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
-
-The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data).
+Pull Out Relevant Data from Gates for Data Acquisition. Don't have blockdiagram to look at right now, so will fill in this section later.
 
 \noindent\hrulefill\, \hyperref[tab:usonic]{Back to USonic Table \ref{tab:usonic}}
 
@@ -440,11 +436,19 @@ The for loop steps through each list section of the ".ini" file. Each list secti
 	\label{fig:USonic-FFT_main_01}
 \end{figure}
 
-The LC931C\_Read.vi reads the LeCroy 9310C oscillosope settings from file and loads the values into a \textbf{LeCroy 9310C Settings} cluster. The settings folder (\textbf{System\_Settings}) is located in the root directory of the main VI. This VI requires the \href{http://sine.ni.com/nips/cds/view/p/lang/en/nid/209753}{MGI Library}. Figure (\ref{fig:LC9310C_Read_blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute.
+The USonic-FFT.vi takes the waveform data array and applies the single sided fast Fourier transform (FFT) which is a complex expression. From the complex expression the Magnitude and Phase are pulled out and have option associated with them. The VI outputs the FFT, Magnitude of FFT, and Phase of FFT as a waveform graph. Also the peak magnitude, peak phase and corresponding frequency are outputted for data analysis. Figure (\ref{fig:USonic-FFT-blkdig}) is the block diagram.  It is setup as an error case structure. When an error is detected from the \textit{error (in)} input then the code in the green box does not execute and all the outputs are set to zero while the error passes through.
 
-The for loop steps through each list section of the ".ini" file. Each list section corresponds to one of the input cluster constants \textit{(LC930x\_TimeBase, LC930x\_Vertical\_Setup, LC930x\_Trigger\_Edge\_Setup, LC930x\_Read\_Wave)}. The \textbf{MGI Read Anything} VI needs to know the format of each section. This is accomplished by the cluster constants being converted into variants for the Read Anything variant input.  For more on the MGI VI's and how they operate, refer to their help manuals respectably. Once the \textbf{MGI Read Anything} VI has pulled out the relevant data, then the \textbf{variant to data} vi is used to reformat the output back to the cluster constant. The output for each cluster only executes when its section is read (hence the when integer counter =0. =1, =2, =3, then output data).
+The single sided fast Fourier transform VI takes the \textbf{Signal (V)} array and the \textbf{dt} double to computer the FFT and cut off one side of the FFT (thus the single sidedness). The output from the FFT is in frequency space so the \textbf{dt} now becomes \textbf{df} and the array output is now complex ($z=x+iy$). For just the FFT graph we take the complex array and \textbf{df} and rebuild the waveform for output. For the magnitude and phase we must convert the expression $z=x+iy$ to $z=r*\exp(i\theta)$ where $Magnitude=r^2$ (note the square, this is actually the power representation) and $phase=\theta$ (in rads). The true/false case structure for the FFT array gives the option to change the scaling of the array to decibel form. The true/false case structure for the phase gives the option to change the scaling to degrees as well as unwraps the phase array by eliminating discontinuities whose absolute values exceed either pi or 180.
+
+Graphs are built as waveform clusters and originate from there respective arrays. For the math portion the processed magnitude array is built into a waveform and passed to the \textbf{Waveform Max/Min} VI to find the peak value ($y-axis$) and its corresponding frequency value ($x-axis$). The peak value is outputted as the Peak Magnitude of the Magnitude array and is feed into the \textbf{Search Array} VI that searches for the index (position in array) of the magnitude array. Then the index is used to pull out the corresponding element from the phase array, this in turn is the peak magnitude of the phase.
 
 \noindent\hrulefill\, \hyperref[tab:usonic]{Back to USonic Table \ref{tab:usonic}}
+
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{USonic-FFT_blockdiagram_01}
+	\caption{USonic-FFT.vi}
+	\label{fig:USonic-FFT-blkdig}
+\end{figure}
 
 \newpage
 
