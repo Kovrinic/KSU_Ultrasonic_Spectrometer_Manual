@@ -20,21 +20,21 @@
 \contentsline {subsubsection}{\numberline {3.2.2.2}DPR300\_Int.vi}{18}{subsubsection.3.2.2.2}
 \contentsline {subsubsection}{\numberline {3.2.2.3}DPR300\_Settings.vi}{20}{subsubsection.3.2.2.3}
 \contentsline {subsubsection}{\numberline {3.2.2.4}DPR300-Config-Write-Close.vi}{20}{subsubsection.3.2.2.4}
-\contentsline {subsection}{\numberline {3.2.3}Ultrasonic Package VIs}{22}{subsection.3.2.3}
-\contentsline {subsubsection}{\numberline {3.2.3.1}USonic-A-Scan-Config-edit.vi}{22}{subsubsection.3.2.3.1}
-\contentsline {subsubsection}{\numberline {3.2.3.2}USonic-Gates-edit.vi}{22}{subsubsection.3.2.3.2}
-\contentsline {subsubsection}{\numberline {3.2.3.3}USonic-FFT.vi}{23}{subsubsection.3.2.3.3}
-\contentsline {subsection}{\numberline {3.2.4}Math VIs}{24}{subsection.3.2.4}
-\contentsline {subsubsection}{\numberline {3.2.4.1}Waveform-to-XY-Array.vi}{24}{subsubsection.3.2.4.1}
-\contentsline {subsubsection}{\numberline {3.2.4.2}Filter\_signal.vi}{24}{subsubsection.3.2.4.2}
-\contentsline {subsubsection}{\numberline {3.2.4.3}Average-Dynamic-Array.vi}{25}{subsubsection.3.2.4.3}
-\contentsline {subsubsection}{\numberline {3.2.4.4}FWHM-Poly.vi}{25}{subsubsection.3.2.4.4}
-\contentsline {subsection}{\numberline {3.2.5}Miscellaneous VIs}{27}{subsection.3.2.5}
-\contentsline {subsubsection}{\numberline {3.2.5.1}Save-User-Config-File.vi}{27}{subsubsection.3.2.5.1}
-\contentsline {subsubsection}{\numberline {3.2.5.2}Load-User-Config-File.vi}{27}{subsubsection.3.2.5.2}
-\contentsline {subsubsection}{\numberline {3.2.5.3}Time-Data.vi}{28}{subsubsection.3.2.5.3}
-\contentsline {subsubsection}{\numberline {3.2.5.4}Instrument-Error-Handler.vi}{28}{subsubsection.3.2.5.4}
+\contentsline {subsection}{\numberline {3.2.3}Ultrasonic Package VIs}{23}{subsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.3.1}USonic-A-Scan-Config-edit.vi}{23}{subsubsection.3.2.3.1}
+\contentsline {subsubsection}{\numberline {3.2.3.2}USonic-Gates-edit.vi}{23}{subsubsection.3.2.3.2}
+\contentsline {subsubsection}{\numberline {3.2.3.3}USonic-FFT.vi}{24}{subsubsection.3.2.3.3}
+\contentsline {subsection}{\numberline {3.2.4}Math VIs}{25}{subsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.4.1}Waveform-to-XY-Array.vi}{25}{subsubsection.3.2.4.1}
+\contentsline {subsubsection}{\numberline {3.2.4.2}Filter\_signal.vi}{25}{subsubsection.3.2.4.2}
+\contentsline {subsubsection}{\numberline {3.2.4.3}Average-Dynamic-Array.vi}{26}{subsubsection.3.2.4.3}
+\contentsline {subsubsection}{\numberline {3.2.4.4}FWHM-Poly.vi}{26}{subsubsection.3.2.4.4}
+\contentsline {subsection}{\numberline {3.2.5}Miscellaneous VIs}{28}{subsection.3.2.5}
+\contentsline {subsubsection}{\numberline {3.2.5.1}Save-User-Config-File.vi}{28}{subsubsection.3.2.5.1}
+\contentsline {subsubsection}{\numberline {3.2.5.2}Load-User-Config-File.vi}{28}{subsubsection.3.2.5.2}
+\contentsline {subsubsection}{\numberline {3.2.5.3}Time-Data.vi}{29}{subsubsection.3.2.5.3}
+\contentsline {subsubsection}{\numberline {3.2.5.4}Instrument-Error-Handler.vi}{29}{subsubsection.3.2.5.4}
 \contentsline {chapter}{\chapternumberline {4}Operation}{31}{chapter.4}
 \contentsline {section}{\numberline {4.1}File Management}{31}{section.4.1}
 \contentsline {section}{\numberline {4.2}Data Acquisition}{31}{section.4.2}
-\contentsline {chapter}{Bibliography}{33}{section*.37}
+\contentsline {chapter}{Bibliography}{33}{section*.38}
